@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+}
+*{
+	box-sizing:border-box;
+}
+h1{
+	font-size: 2rem;
+	color: #454547;
+	margin: 5% auto 3% auto;
+}
+.fullcontent{
+    padding:3% 5%;
+}
+/******************** Imp ********************/
+.form1{
+	width: 100%;
+	height: auto;
+}
+.form1 h1{
+	margin-top: 0;
+}
+h1{
+	text-align: center;
+}
+form{
+	padding: 2% 5%;
+}
+input,textarea,select{
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 10px 7px 0px 7px;	
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+}
+/* input[type=text]:focus {
+    border: 3px solid #555;
+} */
+label{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 10px 7px 0px 7px;	
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+	text-align: center;
+}
+textarea{
+    resize:none;
+	overflow: hidden;
+	padding: 17px 7px 0px 7px;
+}
+input[type=button], input[type=submit], input[type=reset] {
+	width: 100%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.7rem 0.5rem;
+    text-decoration: none;
+    margin: 8px 0;
+    cursor: pointer;
+    box-shadow: inset 0px 1px 0px 0px #45D6D6;
+	border: 1px solid #27A0A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	padding: 8px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+input[type=number]{
+	text-align: right;
+}
+
+/********************* media queries ********************/
+
+@media screen and (max-width: 480px){
+	.small{
+		width: 100%;
+	}
+	
+}
+@media screen and (min-width: 481px) {
+	.small{
+		width: 41.5%;
+	}
+	
+}
+/**************  grid **********/
+.table{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin: 8% 0% 3% 0%;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Natura - invoice</title>
+</head>
+<link rel="stylesheet" type="text/css" href="invoice.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<body>
+	<div class="fullcontent">
+		<div class="form1">
+			<h1>Generate Invoice</h1>
+			<form action="invoice.php" method="post" target="_blank" autocomplete="on">
+				<!-- <label for="firstname">First Name:</label> -->
+				<input type="text" name="customername" value="" placeholder="Customer name" required class="small">
+				<!-- <label for="message" placeholder="Your description">Describe</label> -->
+				<textarea name="address1" class="small" cols="70" rows="10" placeholder="Customer address line 1"></textarea>
+				<textarea name="address2" class="small" cols="70" rows="10" placeholder="Customer address line 2"></textarea>
+				<div class="table">
+					<label for="product">Product/Service</label>
+					<label for="price">price</label>
+					<label for="quantity">quantity</label>
+					<label for="mrp">mrp</label>
+					<label for="discount">discount %</label>
+					<label for="total">Total</label>
+					<input type="text" name="product" value="" placeholder="name of product/service" />
+					<input type="number" name="price" value="0" min="0"/>
+					<input type="number" name="quantity" value="1" default="1" min="1"/>
+					<input type="number" name="mrp" value="00" min="0" max="10000000"/>
+					<input type="number" name="discount" value="0" min="0" max="100"/>
+					<input type="number" name="total" value="0" min="0"/>
+				</div>
+				<input type="submit" value="submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
